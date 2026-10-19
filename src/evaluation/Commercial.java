@@ -10,7 +10,8 @@ public class Commercial extends Employe {
 
 	@Override
 	public double calculerCout(int nbJours) {
-		return (tarifJournalier * nbJours) * tauxPrime;
+		double montantBase = tarifJournalier * nbJours;
+		return montantBase + (montantBase * tauxPrime);
 	}
 
 }

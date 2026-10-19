@@ -22,13 +22,13 @@ public class Mission {
 	public void afficherRecapitulatif() {
 		System.out.println("Recapitulatif");
 		System.out.println("les informations de l’employé");
-		System.out.println(afficherDetails());
+		employe.afficherDetails();
 		System.out.println("les informations du projet");
 		System.out.println(projet.toString());
 		System.out.println("la durée de la mission");
-		System.out.println(nbJours);
+		System.out.println(nbJours+ "jours");
 		System.out.println("le montant calculé");
-		System.out.println(calculerMontant());
+		System.out.println(calculerMontant()+ "Dh");
 	}
 
 }

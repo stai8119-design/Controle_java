@@ -20,10 +20,18 @@ public class Main {
 		
 		Mission[] T2 = {m1, m2, m3,m4};
 		
+		System.out.println("\nRECAPITULATIF DE TOUTES LES MISSIONS");
+		for (int i = 0; i < T2.length; i++) {
+			T2[i].afficherRecapitulatif();
 		
-		if(int i=0; i<T2.length;i++) {
-			 T2[i].afficherRecapitulatif();
 		}
+		
+		double montantTotal = 0;
+		for (Mission m : T2) {
+			montantTotal += m.calculerMontant();
+		}
+		System.out.println("\nMONTANT TOTAL DES MISSIONS");
+		System.out.println("Montant Total Global : " + montantTotal + " DH");
 	}
 
 }

@@ -5,6 +5,7 @@ public abstract class Employe {
 	protected String matricule;
 	protected String nom;
 	protected double tarifJournalier;
+	protected Employe superieur;
 
 	public Employe(String matricule, String nom, double tarifJournalier) {
 		this.matricule = matricule;
@@ -23,7 +24,9 @@ public abstract class Employe {
 	}
 
 	
-	public void setSuperieur(Employe superieur);
+	public void setSuperieur(Employe superieur) {
+		this.superieur = superieur;
+	}
 
 	
 }
